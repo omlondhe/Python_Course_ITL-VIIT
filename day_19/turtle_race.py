@@ -16,7 +16,7 @@ for turtle_index in range(6):
     turtle = Turtle(shape="turtle")
     turtle.penup()
     turtle.color(colors[turtle_index])
-    turtle.goto(x = -240, y = y_position[turtle_index])
+    turtle.goto(x=-240, y=y_position[turtle_index])
     turtles.append(turtle)
 
 is_race_on = False
@@ -31,8 +31,9 @@ while is_race_on:
         turtle.forward(distance)
         if turtle.xcor() > 240:
             turtle_color = turtle.pencolor()
-            print(f"{turtle_color.title()} Turtle wont the race.")
-            print(f"This means, {'won' if bet == turtle_color else 'lost'} the bet!")
+            print(f"{turtle_color.title()} Turtle won the race.")
+            print(
+                f"This means, {'won' if bet == turtle_color else 'lost'} the bet!")
             is_race_on = False
 
 
