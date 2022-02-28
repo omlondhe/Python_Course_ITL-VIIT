@@ -12,4 +12,3 @@ parameters = {
 response = requests.get("http://api.open-notify.org/iss-now.json", params=parameters)
 data = response.json()  
 print(data)
-
